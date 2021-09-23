@@ -11,7 +11,7 @@ export class AuthenticationController {
     return this.authenticationService.registration(userDto);
   }
 
-  @Post('/login')
+  @Post('login')
   login(@Body() userDto: CreateUserDto) {
     return this.authenticationService.login(userDto);
   }
